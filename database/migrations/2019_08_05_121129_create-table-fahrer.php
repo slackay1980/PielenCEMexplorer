@@ -14,7 +14,7 @@ class CreateTableFahrer extends Migration
     public function up()
     {
         Schema::create('fahrer', function (Blueprint $table) {
-            $table->string('name')->index();
+            $table->string('name',100)->index();
             $table->string('ort');
             $table->timestamp('created_at')->nullable();
         });
